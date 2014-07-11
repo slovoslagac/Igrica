@@ -6,8 +6,11 @@ $armijaB = pravljenje_armije(12);
 
 include 'stat_armije.php';
 
-armija_spi ( $armijaA );
-armija_spi ( $armijaB );
+armija_spi ( $armijaA, 'Armija A' );
+armija_spi ( $armijaB, 'Armija B' );
+
+
+
 
 
 

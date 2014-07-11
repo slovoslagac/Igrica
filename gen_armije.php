@@ -1,15 +1,16 @@
 <?php
+include 'vojska.php';
 function pravljenje_armije($br) {
 	for($i = 0; $i < $br; $i ++) {
 		
-		$broj = rand ( 1, 3 );
+		$broj = rand ( 0, 3 );
 		// echo $broj, '<br />';
-		if ($broj == 3) {
-			$vojska [$i] = 'pesadija';
-		} elseif ($broj == 2) {
-			$vojska [$i] = 'tenk';
+		
+		if ($broj = 3) {
+			$broj = rand (0,3);
+			$vojska [$i] = vojska_value ( $broj );
 		} else {
-			$vojska [$i] = 'artiljerija';
+			$vojska [$i] = vojska_value ( $broj );
 		}
 	}
 	

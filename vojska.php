@@ -1,6 +1,6 @@
 <?php
 
-// Spisak pozicija
+// Spisak mogucih jedinica predvidjeno je da bomba bude spec jedinica posto unistava sve druge i sebe samu.
 $pozicije = array (
 		'pesadija',
 		'tenk',

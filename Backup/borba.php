@@ -1,6 +1,6 @@
 <?php
-include 'gen_armije.php';
-include 'stat_armije.php';
+include '../gen_armije.php';
+include '../stat_armije.php';
 
 // Generisanje potrebnih armija
 

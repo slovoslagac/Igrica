@@ -96,11 +96,19 @@ function obracun($VA, $VB) {
 	if ($dA == 0 and $dB == 0) {
 		"Borba nema pobednika posto su obe vojske ostale bez jedinica<br />";
 	} elseif ($dA == 0) {
+		if($j>5) {
+		echo "Armija A je porazena posle ", $j - 1, " borbi<br />";
+		} else {
 		echo "Armija A je porazena posle ", $j - 1, " borbe<br />";
+		}
 		echo "<br />";
 		armija_sum ( $nizB, 'Armija B' );
 	} elseif ($dB == 0) {
+		if($j>5) {
+		echo "Armija B je porazena posle ", $j - 1, " borbi<br />";
+		} else {
 		echo "Armija B je porazena posle ", $j - 1, " borbe<br />";
+		}
 		echo "<br />";
 		armija_sum ( $nizA, 'Armija A' );
 	}

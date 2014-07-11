@@ -15,7 +15,7 @@ function armija_spi($vojska, $ime) {
 
 // Funkcija za sumarni prikaz armije po broju raspolozivih jedinica;
 function armija_sum($vojska, $ime) {
-	$statvoj = array_count_values ( $vojska );
+	$statvoj = array_count_values ( $vojska);
 	
 	echo "Vojska ", $ime, " ima u sastavu <br />";
 	
